@@ -21,7 +21,6 @@ do
       echo "[NO] ${name} has uncommited changes."
       echo "SOLUTION:";
       echo "./publish.sh"
-      exit;
     fi
 
     cd - > /dev/null
