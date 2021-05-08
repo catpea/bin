@@ -16,11 +16,9 @@ do
   if [ -d $target ]; then
     cd $target;
     if [[ -z $(git status -s) ]]; then
-      echo "[OK] ${name} is in sync."
+      echo "$(tput setaf 2)[OK]$(tput sgr 0) ${name} is in sync."
     else
-      echo "[NO] ${name} has uncommited changes."
-      echo "SOLUTION:";
-      echo "./publish.sh"
+      echo "$(tput setaf 1)[NO]$(tput sgr 0) ${name} has uncommited changes. SOLUTION: ./publish.sh"
     fi
 
     cd - > /dev/null
