@@ -13,8 +13,6 @@ do
   url=${submodules[$ix]};
   name=$(basename -s .git $url)
   target="${ROOT}/${name}";
-  echo "($(expr ${ix} + 1)/${#submodules[*]}) $name: $url -> $target";
-
   if [ -d $target ]; then
     cd $target;
     if [[ -z $(git status -s) ]]; then
@@ -26,7 +24,7 @@ do
       exit;
     fi
 
-    cd -
+    cd - > /dev/null
   fi
 
 done
