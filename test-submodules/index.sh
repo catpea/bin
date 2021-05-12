@@ -16,7 +16,7 @@ do
   if [ -d $target ]; then
     cd $target;
     if [[ -z $(git status -s) ]]; then
-      echo "$(tput setaf 2)[OK]$(tput sgr 0) ${name} is in sync."
+      echo "$(tput setaf 2)[OK]$(tput sgr 0) ${name} has no local changes."
     else
       echo "$(tput setaf 1)[NO]$(tput sgr 0) ${name} has uncommited changes. SOLUTION: ./publish.sh"
     fi
