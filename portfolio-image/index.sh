@@ -3,9 +3,17 @@
 
 # 16 - left out punxy
 # montage ./dist/furkies-purrkies/image/lg-poetry-{0695,0707,0713,0714,0716,0720,0724,0740,0746,0748,0756,0759,0764,0765,0767,0769}-illustration.jpg -tile 4x4 -geometry 500x500 dist/furkies-purrkies/wwwroot/portfolio.jpg
-montage ./dist/furkies-purrkies/image/lg-poetry-{0707,0713,0714,0716,0720,0724,0740,0746,0748,0756,0759,0764,0765,0767,0769,0782}-illustration.jpg -tile 4x4 -geometry 500x500 dist/furkies-purrkies/wwwroot/portfolio.jpg
+# montage ./dist/furkies-purrkies/image/lg-poetry-{0707,0713,0714,0716,0720,0724,0740,0746,0748,0756,0759,0764,0765,0767,0769,0782}-illustration.jpg -tile 4x4 -geometry 500x500 portfolio.jpg
 
-# BRING BACK CAT AND GROUNDHOG, ADD WITCH
+montage ./dist/furkies-purrkies/image/lg-poetry-{0708,0687,0695,0707,0704,0713,0714,0716,0720,0724,0740,0746,0748,0756,0759,0764,0765,0767,0769,0782,0791}-illustration.jpg -tile 5x5 -geometry 500x500 -background '#212529' portfolio.jpg
+
+## PURPLE: '#160020'
+
+## PINK: '#f96982'
+
+
+cp portfolio.jpg dist/furkies-purrkies/wwwroot/
+#  ADD WITCH: https://www.reddit.com/user/catpea-com/comments/tkguu5/reddit_gets_drawn_lunar_v_20/
 
 
 # - means private, non-minus - rdf
