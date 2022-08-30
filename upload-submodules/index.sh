@@ -13,7 +13,12 @@ do
   url=${submodules[$ix]};
   name=$(basename -s .git $url)
   target="${ROOT}/${name}";
-  echo "($(expr ${ix} + 1)/${#submodules[*]}) $name: $url -> $target";
+  echo
+  echo
+
+  echo "---------------"
+  echo "UPLOAD: ($(expr ${ix} + 1)/${#submodules[*]}) $name: $url -> $target";
+  echo "---------------"
 
   if [ -d $target ]; then
     cd $target;
